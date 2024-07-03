@@ -1,4 +1,5 @@
 .pixi
+.vscode
 __pycache__
 *.egg-info
 _build
