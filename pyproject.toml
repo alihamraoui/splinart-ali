@@ -7,6 +7,8 @@ name = "splinart"
 dynamic = ["version"]
 requires-python = ">=3.8"
 
+dependencies = ["numpy", "matplotlib"]
+
 license = { file = "LICENSE" }
 
 description = "spline art generator"
@@ -62,8 +64,6 @@ twine = { cmd = "twine upload -r testpypi dist/*", depends-on = [
     "sdist",
     "bdist",
 ] }
-
-[dependencies] = ["numpy", "matplotlib"]
 
 [tool.pixi.dependencies]
 numpy = ">=2.0.0,<2.1"
