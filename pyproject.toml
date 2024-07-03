@@ -106,11 +106,15 @@ pytest-mpl = ">=0.17,<0.18"
 [tool.pixi.feature.tests.tasks]
 pytest = "cd tests; pytest --mpl --cov splinart"
 
+[tool.pixi.feature.precommit.dependencies]
+pre-commit = ">=3.1.1,<3.2"
+
 [tool.pixi.environments]
 publish = ["pypi-release", "conda-release"]
 linter = ["linter"]
 sphinx = ["sphinx"]
 tests = ["tests"]
+dev = ["precommit"]
 
 [tool.pytest.ini_options]
 markers = ["long: marks tests as long (deselect with '-m \"not long\"')"]

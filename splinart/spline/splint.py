@@ -3,6 +3,7 @@
 #
 # License: BSD 3 clause
 """Integration of a cubic spline."""
+
 import numpy as np
 
 
