@@ -11,7 +11,7 @@ python:
   install:
     - method: pip
       path: .
-    - requirements: doc/requirement.txt
+    - requirements: doc/requirements.txt
 formats:
    - pdf
    - epub
