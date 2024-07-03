@@ -7,6 +7,10 @@ build:
 sphinx:
   configuration: doc/conf.py
 
+python:
+  install:
+    - method: pip
+      path: .
 formats:
    - pdf
    - epub

@@ -63,6 +63,8 @@ twine = { cmd = "twine upload -r testpypi dist/*", depends-on = [
     "bdist",
 ] }
 
+[dependencies] = ["numpy", "matplotlib"]
+
 [tool.pixi.dependencies]
 numpy = ">=2.0.0,<2.1"
 matplotlib = ">=3.8.4,<3.9"
